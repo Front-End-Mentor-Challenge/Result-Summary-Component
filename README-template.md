@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/AnoshaSohail/results-summary-component-main.git)
+- Live Site URL: (https://anoshasohail.github.io/results-summary-component-main/)
 
 ## My process
 
@@ -53,4 +53,4 @@ I learned how to make your components responsive using JS and Media Querries
 
 I struggled making the result section of full height of its parent element  
 ## Author
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/AnoshaSohail)
+- Frontend Mentor - [@AnoshaSohail](https://www.frontendmentor.io/profile/AnoshaSohail)
