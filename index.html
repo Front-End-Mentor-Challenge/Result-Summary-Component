@@ -31,7 +31,6 @@
     <link rel="stylesheet" href="./css/main.css" />
     <title>Frontend Mentor | Results summary component</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
         font-size: 11px;
@@ -45,36 +44,112 @@
   <body>
     <main>
       <section class="result_summary">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-6 result">
-              <p>Your Result</p>
-              <div class="result_circle">76<span> of 100</span></div>
-              <p class="Remarks">Great</p>
-              <p class="remarks_details">You scored higher than 65% of the people who have taken these tests.
-                    
-                </p>
+        <div class="container d-flex justify-content-center align-items-center">
+          <!-- main container -->
+          <div
+            class="row main-container justify-content-center align-items-center"
+          >
+            <!--  Result Section starts here-->
+            <div
+              class="col-6 result bg-gradient text-center d-flex justify-content-center flex-column align-items-center p-5"
+            >
+              <p class="txt">Your Result</p>
+              <div
+                class="result_circle circle_grad bigtxt d-flex flex-column align-items-center justify-content-center"
+              >
+                <div>
+                  76 <br />
+                  <span class="smtxt"> of 100</span>
+                </div>
+              </div>
+              <p class="Remarks mdtxt mt-2">Great</p>
+              <p class="remarks_details smtxt para">
+                You scored higher than 65% of the people who have taken these
+                tests.
+              </p>
             </div>
-            <div class="col-6 summary">
-              <p class="summary_txt">Summary</p>
-              <div class="score reaction">Reaction <span>80</span> / 100</div>
-              <div class="score memory">Memory <span>92</span> / 100</div>
-              <div class="score verbal">Verbal <span>61</span> / 100</div>
-              <div class="score visual">Visual <span>72</span> / 100</div>
+            <!-- Result Section Ends Here -->
+            <!--  Summary Section starts here-->
+            <div class="col-6 summary p-5">
+              <p class="summary_txt txt">Summary</p>
+              <div class="score reaction mb-3 scorediv">
+                <img
+                  src="./assets/images/icon-reaction.svg"
+                  class="me-1"
+                  alt=""
+                />Reaction <span class="score_clr">80</span>
+                <span class="score100">/ 100</span>
+              </div>
+              <div class="score memory mb-3 scorediv">
+                <img
+                  src="./assets/images/icon-memory.svg"
+                  class="me-1"
+                  alt=""
+                />Memory <span class="score_clr">92</span>
+                <span class="score100">/ 100</span>
+              </div>
+              <div class="score verbal mb-3 scorediv">
+                <img
+                  src="./assets/images/icon-verbal.svg"
+                  class="me-1"
+                  alt=""
+                />Verbal <span class="score_clr scoremargin">61</span>
+                <span class="score100">/ 100</span>
+              </div>
+              <div class="score visual mb-3 scorediv">
+                <img
+                  src="./assets/images/icon-visual.svg"
+                  class="me-1"
+                  alt=""
+                />Visual <span class="score_clr scoremargin">72</span>
+                <span class="score100">/ 100</span>
+              </div>
               <button class="continue_btn">Continue</button>
             </div>
+            <!--  Summary Section starts here-->
           </div>
         </div>
       </section>
     </main>
 
-     
+    <footer>
+      <div class="attribution mt-5">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Anosha Sohail</a>.
+      </div>
+    </footer>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Anosha Sohail</a>.
-    </div>
+    <script>
+      // Define the media query
+      const mediaQuery = window.matchMedia(
+        "(max-width: 376px), (max-width: 785px)"
+      );
+      //Define the targeted divs
+      const summaryDiv = document.querySelector(".summary");
+      const resultDiv = document.querySelector(".result");
+      const scorediv = document.querySelectorAll(".scorediv");
+      // Function to handle the media query changes
+      function handleMediaQueryChange(event) {
+        if (event.matches) {
+          summaryDiv.classList.remove("col-6");
+          summaryDiv.classList.add("col-12");
+          resultDiv.classList.remove("col-6");
+          resultDiv.classList.add("col-12");
+        } else {
+          summaryDiv.classList.remove("col-12");
+          summaryDiv.classList.add("col-6");
+          resultDiv.classList.remove("col-12");
+          resultDiv.classList.add("col-6");
+        }
+      }
+
+      // Add the event listener for the media query
+      mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+      // Execute the function once initially to handle the initial state
+      handleMediaQueryChange(mediaQuery);
+    </script>
   </body>
 </html>
