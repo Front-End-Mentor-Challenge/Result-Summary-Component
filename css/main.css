@@ -29,6 +29,7 @@ body {
   border-top-right-radius: 24px;
   border-bottom-right-radius: 24px;
   border-bottom-left-radius: 24px;
+  padding-top: 3.2rem;
   /* height: 100%; */
 }
 
@@ -78,7 +79,6 @@ body {
 }
 
 .summary_txt {
-  font-weight: 700;
   color: hsl(224, 30%, 27%);
 }
 
