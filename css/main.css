@@ -16,7 +16,7 @@ body {
   background-color: hsl(0, 0%, 100%);
   border-radius: 24px;
   width: 724px;
-  height: 100%;
+  /*  height: 100%; */
   box-shadow: 4px 1px 13px -7px rgba(46, 43, 233, 0.22);
 }
 
@@ -25,8 +25,11 @@ body {
   box-shadow: 4px 1px 13px -7px rgb(46 43 233 / 22%);
 } */
 .result {
-  border-radius: 24px;
-  height: 100%;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+  border-bottom-left-radius: 24px;
+  /* height: 100%; */
 }
 
 .bg-gradient {

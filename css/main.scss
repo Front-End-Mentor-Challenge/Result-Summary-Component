@@ -22,7 +22,10 @@ body {
   box-shadow: 4px 1px 13px -7px rgb(46 43 233 / 22%);
 } */
 .result {
-  border-radius: 24px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+  border-bottom-left-radius: 24px;
   /* height: 100%; */
 }
 .bg-gradient {

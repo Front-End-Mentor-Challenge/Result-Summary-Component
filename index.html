@@ -130,6 +130,7 @@
       const summaryDiv = document.querySelector(".summary");
       const resultDiv = document.querySelector(".result");
       const scorediv = document.querySelectorAll(".scorediv");
+      const maincont = document.querySelector('.main-container')
       // Function to handle the media query changes
       function handleMediaQueryChange(event) {
         if (event.matches) {
@@ -137,11 +138,25 @@
           summaryDiv.classList.add("col-12");
           resultDiv.classList.remove("col-6");
           resultDiv.classList.add("col-12");
+          maincont.style.marginTop = '0';
+          /* resultDiv.style.borderRadius= '0px'; */
+          resultDiv.style.borderTopLeftRadius = '0px';
+          resultDiv.style.borderTopRightRadius = '0px';
+          maincont.style.boxShadow = 'none';
+          maincont.style.borderRadius= '0px';
+         /*  maincont.style.width = '100%'; */
+
         } else {
           summaryDiv.classList.remove("col-12");
           summaryDiv.classList.add("col-6");
           resultDiv.classList.remove("col-12");
           resultDiv.classList.add("col-6");
+          maincont.style.marginTop = '20vh';
+         /*  maincont.style.width = '724px' */
+         resultDiv.style.borderTopLeftRadius = '24px';
+          resultDiv.style.borderTopRightRadius = '24px';
+          maincont.style.borderRadius= '24px';
+          maincont.style.boxShadow = '4px 1px 13px -7px rgb(46 43 233 / 22%)';
         }
       }
 
