@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/AnoshaSohail/results-summary-component-main.git)
-- Live Site URL: (https://anoshasohail.github.io/results-summary-component-main/)
+- Live Site URL: ( https://front-end-mentor-challenge.github.io/Result-Summary-Component/)
 
 ## My process
 
